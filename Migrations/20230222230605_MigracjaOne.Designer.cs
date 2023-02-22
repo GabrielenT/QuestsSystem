@@ -12,7 +12,7 @@ using QuestsSystem.Data;
 namespace QuestsSystem.Migrations
 {
     [DbContext(typeof(QuestContext))]
-    [Migration("20230222225222_MigracjaOne")]
+    [Migration("20230222230605_MigracjaOne")]
     partial class MigracjaOne
     {
         /// <inheritdoc />

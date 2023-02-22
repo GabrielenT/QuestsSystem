@@ -8,10 +8,10 @@ namespace QuestsSystem.Data
 
         public QuestContext(DbContextOptions options) :base(options)
         {
-            //Quest.Add(new Quest { Name = "Wolf Destroyer", Description = "Kill 10 wolves", Level = 1, Rarity = Rarity.common, IsChainQuest = false });
-            //Quest.Add(new Quest { Name = "Sheep Destroyer", Description = "Kill 10 sheeps", Level = 1, Rarity = Rarity.common, IsChainQuest = false, Location = Locations.forest });
-            //Quest.Add(new Quest { Name = "Sheep Desacration", Description = "Kill 666 white sheeps", Level = 1, Rarity = Rarity.rare, IsChainQuest = true, Location = Locations.farm });
-            //Quest.Add(new Quest { Name = "Sheep Destroyer", Description = "Stop the Sheepocalypse", Level = 1, Rarity = Rarity.common, IsChainQuest = false, Location = Locations.ruins });
+            Quest.Add(new Quest { Name = "Wolf Destroyer", Description = "Kill 10 wolves", Level = 1, Rarity = Rarity.common, IsChainQuest = false });
+            Quest.Add(new Quest { Name = "Sheep Destroyer", Description = "Kill 10 sheeps", Level = 1, Rarity = Rarity.common, IsChainQuest = false, Location = Locations.forest });
+            Quest.Add(new Quest { Name = "Sheep Desacration", Description = "Kill 666 white sheeps", Level = 1, Rarity = Rarity.rare, IsChainQuest = true, Location = Locations.farm });
+            Quest.Add(new Quest { Name = "Sheep Destroyer", Description = "Stop the Sheepocalypse", Level = 1, Rarity = Rarity.common, IsChainQuest = false, Location = Locations.ruins });
         }
         public DbSet<Mob> Mob { get; set; }
         public DbSet<Npc> Npc { get; set; }
