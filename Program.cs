@@ -8,7 +8,7 @@ using System.Configuration;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<QuestContext>(options =>
 {
-    options.UseSqlServer("Server=localhost;Initial Catalog=QuestsSystemDB;Persist Security Info=False;Connection Timeout=30;");
+    options.UseSqlServer("Server=localhost;Initial Catalog=QuestsSystemDB;Trust Server Certificate=true; Connection Timeout=30;");
 });
 
 // Add services to the container.
