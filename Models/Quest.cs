@@ -20,6 +20,6 @@
         public Locations? Location { get; set; }
         public virtual ICollection<QuestRewardConnector>? Reward { get; set; }
         // public string? AdditionalRewards { get; set; } //collection of additionalrewards
-
+        
     }
 }
